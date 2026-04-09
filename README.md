@@ -4,23 +4,19 @@
 [![Figma](https://img.shields.io/badge/Figma-Design_Link-F24E1E?style=flat-square&logo=figma)](https://www.figma.com/design/9A2XCWjwngTpM3VCQUHmFp/AI-interview-website?node-id=0-1&t=8bjxynOs9cGKTaLe-1)
 
 ## 📌 プロジェクト概要
-- **プロジェクト説明**: リアルタイムの質問生成、音声分析、フィードバックを提供するWebベースのAI模擬面接プラットフォーム
+- **プロジェクト説明**: リアルタイムの質問生成、音声分析、フィードバックを提供する AI 模擬面接Webサービス
 - **開発期間**: 2025.05 ~ 2025.07（10週間）
-- **チーム構成**: フロントエンド 2名、バックエンド 2名、AIエンジニア 1名、インフラ（メンバー全員） 計5名
-- **技術スタック**: TypeScript, Tailwind CSS, Figma, Django REST Framework, AWS Cognito, Amazon S3, AWS Lambda, Zonos, Amazon Bedrock (Claude), Amazon DynamoDB, WebSocket, Amazon ECS, Amazon EC2, Amazon RDS, Amazon CloudWatch, Prometheus, Grafana, Docker, GitHub Actions
-- **担当役割**: PM（プロジェクトマネージャー）, フロントエンド & インフラエンジニア
+- **参加人数**：6名
+- **技術スタック**: TypeScript, Tailwind CSS, Figma, Django REST Framework, AWS Cognito, S3, Lambda, Bedrock（Claude）, DynamoDB, WebSocket, ECS, CloudWatch, Prometheus, Grafana
+- **担当役割**: バックエンド
 
-### 💡 主な担当業務と成果 (Main Role)
-* **セキュアなインフラ設計とDevOps環境の構築**
-  * アプリケーション層（EC2/ECS）とデータベース層（RDS）を**完全に独立したVPCに分離**して配置し、データ境界のセキュリティを強化しました。
-  * **VPC Peering**を利用して、分離されたVPC間に安全なプライベート通信チャネルを確立しました。
-* **CI/CDパイプラインの構築**
-  * **GitHub Actions**を活用し、Dockerイメージの自動ビルド、Docker Hubへのプッシュ、およびAWS EC2環境への自動デプロイメントパイプラインを構築しました。
-* **監視・モニタリング環境の統合**
-  * **Amazon CloudWatch、Prometheus、Grafana**を統合し、CPU使用率やネットワークトラフィックなどの主要メトリクスを追跡するリアルタイム監視およびアラートシステムを構築しました。
-* **フロントエンド開発と認証機能の実装**
-  * **AWS Cognito**をベースとしたログイン・サインアップ機能を実装し、フロントエンド・バックエンド間のJWT認証フローを構築しました。
-  * **TypeScript**を用いてレスポンシブなWebページを構築し、履歴書のアップロード、面接質問の動的表示、フィードバック取得などのバックエンドAPIとの統合を行いました。
+### 💡 主な担当業務と成果
+* **バックエンド API 構成の実装**
+  * 認証連携、質問生成、フィードバック処理のためのバックエンド API 構成を実装しました。
+* **データ処理構造の改善**
+  * データ保存・取得方式を見直し、S3・DynamoDB を活用した構成へ改善しました。
+* **応答時間の短縮**
+  * ユーザー向けフィードバックの応答時間を約20秒から約5秒へ短縮し、サービスの使用感を向上させました。
 
 ---
 
